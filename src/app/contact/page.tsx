@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/scroll-reveal";
 const page = () => {
   return (
     <section id="contact">
-      <div className="text-center">
+      <div className="bg-[#1d1d1d] text-center">
         <ScrollReveal>
           <h1 className="text-3xl font-light md:text-4xl">
             Start Building with
