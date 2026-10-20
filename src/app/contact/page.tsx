@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/scroll-reveal";
 const page = () => {
   return (
     <section id="contact" className="bg-[#1d1d1d]">
-      <div className="text-center">
+      <div className="text-center text-white">
         <ScrollReveal>
           <h1 className="text-3xl font-light md:text-4xl">
             Start Building with
@@ -20,7 +20,7 @@ const page = () => {
           </p>
         </ScrollReveal>
       </div>
-      <div className="flex gap-5 lg:ml-auto items-center justify-center">
+      <div className="flex gap-5 lg:ml-auto items-center justify-center text-white">
         <a
           href="#getstarted"
           className="border border-white px-5 py-2.5 text-xs hover:bg-white hover:text-black"
@@ -36,7 +36,7 @@ const page = () => {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 p-8 md:p-10 lg:p-15">
+      <div className="grid grid-cols-1 sm:grid-cols-2 p-8 md:p-10 lg:p-15 text-white">
         <div className="flex text-left gap-10 sm:gap-12 lg:gap-20">
           <ul className="space-y-3">
             <li>Product</li>
