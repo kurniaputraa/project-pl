@@ -1,17 +1,29 @@
-import React from "react";
+"use client";
+import ScrollReveal from "@/components/scroll-reveal";
+import { easeOut, motion } from "motion/react";
 
 const page = () => {
   return (
     <section id="proccess" className="p-15">
       <div className="grid grid-cols-2 justify-end pb-10">
-        <h1 className="font-bold text-2xl text-white">From Input to Insight</h1>
+        <ScrollReveal>
+          <h1 className="font-bold text-2xl text-white">
+            From Input to Insight
+          </h1>
+        </ScrollReveal>
         <p className="text-xs pt-2 text-right text-white/70">
           A simple proccess with powerfull
           <br />
           outcomes
         </p>
       </div>
-      <div className="border border-white/20 pt-10 pb-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.15 }}
+        transition={{ duration: 0.8, ease: easeOut }}
+        className="border border-white/20 pt-10 pb-10"
+      >
         <h1 className="text-center justify-center text-xs sm:text-sm md:text-lg lg:text-2xl text-white">
           Explain teh Workfow in a clear and structured way so
           <br />
@@ -73,7 +85,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

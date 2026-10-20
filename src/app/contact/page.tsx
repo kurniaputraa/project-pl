@@ -1,19 +1,24 @@
-import React from "react";
+import ScrollReveal from "@/components/scroll-reveal";
 
 const page = () => {
   return (
     <section id="contact">
       <div className="text-center">
-        <h1 className="font-bold text-2xl">
-          Start Building with
-          <br />
-          Smarter System
-        </h1>
-        <p className="p-10">
-          Take the next step toward
-          <br />
-          intelligent workflows
-        </p>
+        <ScrollReveal>
+          <h1 className="text-3xl font-light md:text-4xl">
+            Start Building with
+            <br />
+            Smarter System
+          </h1>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.2}>
+          <p className="m-5 text-sm text-white/60 md:text-base">
+            Take the next step toward
+            <br />
+            intelligent workflows.
+          </p>
+        </ScrollReveal>
       </div>
       <div className="flex gap-5 lg:ml-auto items-center justify-center">
         <a
@@ -64,7 +69,7 @@ const page = () => {
         </div>
       </div>
       <footer className="flex justify-center mt-8 px-6 pb-6 sm:justify-end sm:-mt-8 sm:me-8 sm:px-0 sm:pb-0 lg:me-12">
-        <p className="text-center text-xs md:text-right">
+        <p className="text-center text-xs md:text-right text-white/60 transition-colors duration-300 hover:text-white">
           &copy; 2027 Vireya Capital Partners. All Rights Reserved
         </p>
       </footer>
