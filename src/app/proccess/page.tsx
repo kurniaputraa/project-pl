@@ -4,7 +4,7 @@ import { easeOut, motion } from "motion/react";
 
 const page = () => {
   return (
-    <section id="proccess" className="bg-[#1d1d1] p-15">
+    <section id="proccess" className="bg-[#1d1d1d] p-15">
       <div className="grid grid-cols-2 justify-end pb-10">
         <ScrollReveal>
           <h1 className="font-bold text-2xl text-white">
